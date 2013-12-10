@@ -15,7 +15,7 @@ Standard import:
 By default the database will use localhost.<br>
 Modify `database.use_safe("geonames", "cities", function(db) {` to use another database.
 
-For example:
-`database.use_safe("example.com/geonames", "cities", function(db) {`
-or
+For example: <br>
+`database.use_safe("example.com/geonames", "cities", function(db) {` <br>
+or <br>
 `database.use_safe("username:password@example.com/geonames", "cities", function(db) {`
