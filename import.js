@@ -8,7 +8,7 @@ lineReader.eachLine('./geonames-data/CA.txt', function(line, last) {
 
   if (city.city) { // if this is a city.
 
-		database.use_safe("geonames", "cities", function(db) {
+		database.use_safe("template", "locations", function(db) {
 			db.save(city, { safe: true }, function(err, doc) {
 				if (err)  { 
 					console.log("Error saving document: " + doc);
